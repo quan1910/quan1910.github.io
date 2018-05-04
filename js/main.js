@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(window).load(function () {
     $("#preloader").fadeOut("slow");
 });
 
@@ -16,7 +16,7 @@ function httpGetAsync(theUrl, callback) {
     xmlHttp.send(null);
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
     httpGetAsync(data_url, function (data) {
         var obj = JSON.parse(data);
         console.log(obj.content);
